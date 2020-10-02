@@ -1,0 +1,7 @@
+(function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var e=function(a){if(!a||"object"!==typeof a)return a;if("function"===typeof a.clone)return a.clone();var b=Array.isArray(a)?[]:"function"!==typeof ArrayBuffer||"function"!==typeof ArrayBuffer.isView||!ArrayBuffer.isView(a)||a instanceof DataView?{}:new a.constructor(a.length),c;for(c in a)b[c]=e(a[c]);return b};var f={google_template_data:{adData:[{}]}},g=function(){var a;if(a=(a=/[?&]feed=([^&]*)/.exec(window.location.search))?decodeURIComponent(a[1].replace(/\+/g," ")):""){var b=window.frameElement&&window.frameElement.ownerDocument&&window.frameElement.ownerDocument.defaultView;b?(b=b.gwdPreview&&b.gwdPreview.config)?(b=b.feeds||{},a=b[a]?e(b[a]):null):a=null:a=null}else a=null;return a};var h=function(a,b,c){var d=void 0===d?!1:d;a.addEventListener(b,function k(l){c(l);a.removeEventListener(b,k,d)},d)};h(document,"DOMContentLoaded",function(){if(document.querySelector("gwd-studio-enabler-data-provider")){var a=g();a&&(a=encodeURIComponent(JSON.stringify(a.feed)),Enabler.setAdParameters("layoutsConfig="+a))}});
+h(window,"WebComponentsReady",function(){if(document.querySelector("gwd-gpa-data-provider")&&"function"==typeof window.onAdData){var a=g();if(a)window.onAdData(a.feed);else if((a=document.querySelector("gwd-gpa-data-provider"))&&a.hasAttribute("is-custom-schema"))window.onAdData(f)}});}).call(this);

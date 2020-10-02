@@ -1,0 +1,39 @@
+{
+    "Product": [{
+        "name": "From Amsterdam to Los Angeles",
+        "imageUrl": "https://res.cloudinary.com/frankie-dev/image/upload/v1601654056/mm-fe-assessment/los-angeles.jpg",
+        "price": "$799",
+        "salePrice": "$399",
+        "url": "https://www.google.com/flights#flt=/m/0k3p.LAX.2018-07-14*LAX./m/0k3p.2018-07-18;c:USD;e:1;sd:1;t:f"
+    }, {
+        "name": "From London to Singapore",
+        "imageUrl": "https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/singapore.jpg",
+        "price": "$459",
+        "salePrice": "$459",
+        "url": "https://www.google.com/flights?lite=0#flt=/m/04jpl.SIN.2018-07-14*SIN./m/04jpl.2018-07-18;c:USD;e:1;sd:1;t:f"
+    }, {
+        "name": "From New York to Buenos Aires",
+        "imageUrl": "https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/buenos-aries.jpg",
+        "price": "$1050",
+        "salePrice": "$299",
+        "url": "https://www.google.com/flights?lite=0#flt=/m/02_286./m/01ly5m.2018-07-14*/m/01ly5m./m/02_286.2018-07-18;c:USD;e:1;sd:1;t:f"
+    }, {
+        "name": "From Los Angeles to Dubai",
+        "imageUrl": "https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/dubai.jpg",
+        "price": "$499",
+        "salePrice": "$499",
+        "url": "https://www.google.com/flights?lite=0#flt=LAX./m/01f08r.2018-07-14*/m/01f08r.LAX.2018-07-18;c:USD;e:1;sd:1;t:f"
+    }, {
+        "name": "From Mexico to Shanghai",
+        "imageUrl": "https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/shanghai.jpg",
+        "price": "$1799",
+        "salePrice": "$699",
+        "url": "https://www.google.com/flights?lite=0#flt=MEX./m/06wjf.2018-07-14*/m/06wjf.MEX.2018-07-18;c:USD;e:1;sd:1;t:f"
+    }, {
+        "name": "From Los Angeles to São Paulo",
+        "imageUrl": "https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/sao-paulo.jpg",
+        "price": "$1399",
+        "salePrice": "$499",
+        "url": "https://www.google.com/flights?lite=0#flt=MEX./m/06wjf.2018-07-14*/m/06wjf.MEX.2018-07-18;c:USD;e:1;sd:1;t:f"
+    }]
+}

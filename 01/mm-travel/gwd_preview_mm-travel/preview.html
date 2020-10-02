@@ -1,0 +1,34 @@
+<html><head>
+    <!--
+    Load various Web Components polyfills required by IE and Edge. While the polyfills are
+    not needed for other browsers, they're loaded irrespective of browser features because we rely
+    on the polyfill's `WebComponentsReady` event as a signal that the app is ready to be initialized
+    (see init.js).
+    -->
+    <!-- Polyfill Web Components. -->
+    <script src="webcomponentsjs/webcomponents-lite.js"></script>
+
+    <!-- Polyfill Web Animations. This file is necessary for some paper elements. -->
+    <script src="webcomponentsjs/web-animations-next-lite.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Roboto:regular">
+
+    <script src="preview_polymer.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      tf-creative-preview {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  <script>window.gwdPreview = {"config":{"uuid":1601657622135,"previewPath":"index.html","modes":["single","allfeeds"],"sizes":["300x600"],"feeds":{"mm_travel_feed":{"name":"mm_travel_feed","feed":{"destination_url":"http://www.google.com","google_ait_url":"","google_click_url":"","google_height":"","google_template_data":{"adData":[{"Product":[{"name":"From Amsterdam to Los Angeles","imageUrl":"https://res.cloudinary.com/frankie-dev/image/upload/v1601654056/mm-fe-assessment/los-angeles.jpg","price":"$799","salePrice":"$399","url":"https://www.google.com/flights#flt=/m/0k3p.LAX.2018-07-14*LAX./m/0k3p.2018-07-18;c:USD;e:1;sd:1;t:f"},{"name":"From London to Singapore","imageUrl":"https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/singapore.jpg","price":"$459","salePrice":"$459","url":"https://www.google.com/flights?lite=0#flt=/m/04jpl.SIN.2018-07-14*SIN./m/04jpl.2018-07-18;c:USD;e:1;sd:1;t:f"},{"name":"From New York to Buenos Aires","imageUrl":"https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/buenos-aries.jpg","price":"$1050","salePrice":"$299","url":"https://www.google.com/flights?lite=0#flt=/m/02_286./m/01ly5m.2018-07-14*/m/01ly5m./m/02_286.2018-07-18;c:USD;e:1;sd:1;t:f"},{"name":"From Los Angeles to Dubai","imageUrl":"https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/dubai.jpg","price":"$499","salePrice":"$499","url":"https://www.google.com/flights?lite=0#flt=LAX./m/01f08r.2018-07-14*/m/01f08r.LAX.2018-07-18;c:USD;e:1;sd:1;t:f"},{"name":"From Mexico to Shanghai","imageUrl":"https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/shanghai.jpg","price":"$1799","salePrice":"$699","url":"https://www.google.com/flights?lite=0#flt=MEX./m/06wjf.2018-07-14*/m/06wjf.MEX.2018-07-18;c:USD;e:1;sd:1;t:f"},{"name":"From Los Angeles to S\u00e3o Paulo","imageUrl":"https://res.cloudinary.com/frankie-dev/image/upload/v1601649565/mm-fe-assessment/sao-paulo.jpg","price":"$1399","salePrice":"$499","url":"https://www.google.com/flights?lite=0#flt=MEX./m/06wjf.2018-07-14*/m/06wjf.MEX.2018-07-18;c:USD;e:1;sd:1;t:f"}]}]}}}},"feedNames":["","mm_travel_feed"],"defaults":{"mode":"allfeeds","modeSettings":{"single":{"size":"300x600","feed":"mm_travel_feed"},"allfeeds":{"size":"300x600","feeds":["","mm_travel_feed"]}}}},"strings":{"MSG_ALL_FEEDS_MODE":"All sample data","MSG_ALL_SIZES_MODE":"All sizes","MSG_CUSTOM":"Custom","MSG_CUSTOM_SIZE":"Custom size","MSG_DESKTOP_MODE":"Desktop","MSG_DEVICE":"Device","MSG_MOBILE_MODE":"Mobile","MSG_NO_SAMPLE_DATA":"No sample data","MSG_NO_SAMPLE_DATA_TO_PREVIEW":"Select sample data to see previews.","MSG_NO_SIZES_TO_PREVIEW":"Select sizes to see previews.","MSG_NONE_SELECTED":"None selected","MSG_PARALLAX_MODE":"Scrollable","MSG_PREVIEW_MODE":"Preview mode","MSG_RELOAD":"Reload","MSG_RELOAD_ALL":"Reload all","MSG_ROTATE_DEVICE":"Rotate device","MSG_SAMPLE_FEED":"Sample data","MSG_SAMPLE_FEEDS":"Sample data","MSG_SELECT_ALL":"Select all","MSG_SELECT_NONE":"Select none","MSG_SELECTED":"{num} selected","MSG_SHOW_SIZE":"Show size","MSG_SHOW_SIZES":"Show sizes","MSG_SINGLE_MODE":"Single size","MSG_VIEWPORT_SIZE":"Viewport size"}};</script></head>
+
+  <body>
+    <tf-creative-preview id="preview-app"></tf-creative-preview>
+  
+
+</body></html>
