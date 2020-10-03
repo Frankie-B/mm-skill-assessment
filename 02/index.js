@@ -1,4 +1,3 @@
-// Assigning html elements to variables
 let select = s => document.querySelector(s),
   selectAll = s => document.querySelectorAll(s),
   carousel = select('.carousel-group'),
@@ -20,14 +19,14 @@ carousel.style.transform = 'translateX( ' + (-imgSize * counter) + 'px)';
 // Event listeners for clicks on buttons.
 next.addEventListener('click', () => {
   if (counter >= carouselItems.length - 1) return; // prevents transitionend event listener from breaking when rapidly clicking button.
-  carousel.style.transition = 'transform 0.4s ease-in-out';
+  carousel.style.transition = 'transform 0.7s ease-in-out';
   counter++; // increment counter.
   carousel.style.transform = 'translateX( ' + (-imgSize * counter) + 'px)';
 });
 
 prev.addEventListener('click', () => {
   if (counter <= 0) return; // prevents transitionend event listener from breaking when rapidly clicking button.
-  carousel.style.transition = 'transform 0.4s ease-in-out';
+  carousel.style.transition = 'transform 0.7s ease-in-out';
   counter--; // decrement counter.
   carousel.style.transform = 'translateX( ' + (-imgSize * counter) + 'px)';
 });
