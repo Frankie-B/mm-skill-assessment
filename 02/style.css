@@ -7,6 +7,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
+  padding: 2rem 0;
 }
 
 .wrapper {
@@ -17,6 +18,8 @@ body {
 
 .carousel {
   position: relative;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .carousel-controls {
@@ -28,15 +31,27 @@ body {
   width: 300px;
 }
 
-.logo {
-  height: 30px;
+.carousel-control img:hover {
+  cursor: pointer;
+}
+
+.carousel-group {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-item img {
   height: 200px;
   width: 300px;
-}
-
-.carousel-group {
-  position: relative;
 }
