@@ -84,12 +84,10 @@
     }
     .gwd-swipegallery-rrts {
       position: absolute;
-      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-      transform-style: preserve-3d;
       left: -153px;
       top: 24.5px;
-      width: 290px;
       height: 369px;
+      width: 300px;
     }
     .gwd-img-bqtg {
       position: absolute;
@@ -183,8 +181,9 @@
       top: 23.5px;
     }
     .gwd-swipegallery-mtvp {
-      left: 5px;
       top: 105px;
+      left: 0px;
+      transform-origin: 50% 50% 0px;
     }
     .js-item-name {
       height: 42px;
@@ -224,11 +223,11 @@
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-img-kiys {
       position: absolute;
-      left: -5px;
       width: 300px;
       transform-origin: 50% 50% 0px;
       top: 60px;
       height: 338px;
+      left: 1px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-eelt {
       position: absolute;
@@ -268,7 +267,7 @@
       height: 51px;
       width: 224px;
       background-color: rgb(223, 47, 0);
-      left: 33px;
+      left: 39px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-w3uv {
       max-height: 100%;
@@ -282,7 +281,7 @@
       top: 15px;
     }
     [data-gwd-group="item"] {
-      width: 290px;
+      width: 302px;
       height: 398px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-1d6j {
@@ -292,29 +291,33 @@
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-1rcs {
       overflow: hidden;
-      left: 20px;
       width: 250px;
       height: 50px;
       top: 257px;
+      left: 26px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-yksl {
       overflow: hidden;
-      left: -6px;
       width: 302px;
       height: 60px;
       transform-origin: 50% 50% 0px;
       top: 109px;
+      left: 0px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-yar1 {
       box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 2px 0px;
-      height: 354px;
-      width: 290px;
       background-color: rgba(255, 255, 255, 0.5);
+      top: 60px;
+      height: 338px;
+      transform-origin: 50% 50% 0px;
+      left: 1px;
+      width: 300px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-1atn {
       height: 354px;
       width: 290px;
       background-color: transparent;
+      left: 6px;
     }
     .gwd-div-1xas {
       position: absolute;
@@ -324,7 +327,11 @@
       height: 57px;
     }
     .gwd-div-14gy {
-      top: 417px;
+      transform-origin: 50% 50% 0px;
+      top: 421px;
+      height: 53px;
+      left: 38px;
+      width: 74.67%;
     }
     .gwd-div-1ygc {
       height: 35px;
@@ -369,11 +376,6 @@
       position: absolute;
       left: -422px;
       top: 495px;
-    }
-    .gwd-div-17rw {
-      position: absolute;
-      color: rgb(76, 76, 76);
-      top: 72px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.js-item-prices {
       width: 12px;
@@ -422,9 +424,37 @@
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-194c {
       left: 2%;
+      font-family: Montserrat;
+      font-weight: bold;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-1sf9 {
-      left: 239px;
+      height: 61px;
+      background-color: transparent;
+      left: 150px;
+      top: 227px;
+    }
+    [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-rw8y {
+      height: 61px;
+      background-color: transparent;
+      top: 227px;
+      left: 20px;
+      opacity: 0.7;
+    }
+    [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-1t2k {
+      font-family: Montserrat;
+      font-weight: bold;
+      left: 2.72%;
+      opacity: 0.6;
+    }
+    .gwd-div-5vt8 {
+      left: -6px;
+    }
+    [data-gwd-group="item"] .gwd-grp-9tnc.gwd-image-r95o {
+      position: absolute;
+      width: 113px;
+      height: 44px;
+      left: 13px;
+      top: 7px;
     }
   </style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
@@ -545,11 +575,12 @@
     <div data-gwd-group-def="item" data-gwd-group-class="gwd-grp-9tnc" style="display: none;">
       <div class="box-shadow-item gwd-div-iyat gwd-grp-9tnc gwd-div-1atn" data-gwd-grp-id="item-bg"></div>
       <gwd-image class="gwd-grp-9tnc gwd-img-kiys" data-gwd-grp-id="item-img" scaling="cover" bind-source="Product.0.imageUrl"></gwd-image>
-      <div class="js-item-prices gwd-grp-9tnc gwd-div-f0ms gwd-div-13e6" data-gwd-grp-id="item-prices" style="width: auto;">
-        <div class="v-center js-item-price gwd-div-j0ku gwd-grp-9tnc gwd-div-6qmu gwd-gen-1806gwdanimation" data-gwd-grp-id="item-price-txt" gwd-fitting-truncate="true" style="white-space: nowrap; color: rgb(255, 255, 255); padding-left: 2px; max-width: 245px; padding-right: 10px; font-size: 14px;" data-gwd-fit-font-size="" gwd-min-font-size-px="10" bind-text="Product.0.price" bind-show="Product.0.price"></div>
+      <div class="js-item-prices gwd-grp-9tnc gwd-div-f0ms gwd-div-13e6 gwd-div-rw8y" data-gwd-grp-id="item-prices" style="width: 138px;">
+        <div class="v-center js-item-price gwd-div-j0ku gwd-grp-9tnc gwd-div-6qmu gwd-gen-1806gwdanimation gwd-div-1t2k" data-gwd-grp-id="item-price-txt" gwd-fitting-truncate="true" style="white-space: nowrap; color: rgb(255, 255, 255); padding-left: 2px; max-width: 245px; padding-right: 10px; font-size: 50px;" data-gwd-fit-font-size="" gwd-min-font-size-px="10" bind-text="Product.0.price" bind-show="Product.0.price"></div>
+        <gwd-image source="assets/crossout.png" scaling="stretch" data-gwd-grp-id="crossout" class="gwd-grp-9tnc gwd-image-r95o" data-gwd-tl-locked=""></gwd-image>
       </div>
-      <div class="js-item-prices gwd-div-f0ms gwd-div-13e6 gwd-grp-9tnc gwd-div-1sf9" style="width: auto;" data-gwd-grp-id="item-sale-prices">
-        <div class="v-center js-item-price gwd-div-j0ku gwd-div-6qmu gwd-gen-1806gwdanimation gwd-grp-9tnc gwd-div-194c" gwd-fitting-truncate="true" style="white-space: nowrap; color: rgb(255, 255, 255); padding-left: 2px; max-width: 245px; padding-right: 10px; font-size: 14px;" data-gwd-fit-font-size="" gwd-min-font-size-px="10" data-gwd-grp-id="item-sale-price-txt" bind-text="Product.0.salePrice" bind-show="Product.0.salePrice"></div>
+      <div class="js-item-prices gwd-div-f0ms gwd-div-13e6 gwd-grp-9tnc gwd-div-1sf9" style="width: 138px;" data-gwd-grp-id="item-sale-prices" data-gwd-tl-locked="">
+        <div class="v-center js-item-price gwd-div-j0ku gwd-div-6qmu gwd-gen-1806gwdanimation gwd-grp-9tnc gwd-div-194c" gwd-fitting-truncate="true" style="white-space: nowrap; color: rgb(255, 255, 255); padding-left: 2px; max-width: 245px; padding-right: 10px; font-size: 50px;" data-gwd-fit-font-size="" gwd-min-font-size-px="10" data-gwd-grp-id="item-sale-price-txt" bind-text="Product.0.salePrice" bind-show="Product.0.salePrice"></div>
       </div>
       <div class="js-item-name transition-opacity gwd-grp-9tnc gwd-div-eelt gwd-div-yksl" data-gwd-grp-id="item-name" style="font-size: 16px;">
         <div class="v-center gwd-div-j0ku gwd-div-sli3 gwd-grp-9tnc gwd-div-huei" data-gwd-grp-id="item-name-txt" style="font-weight: bold; font-size: 25px;" data-gwd-fit-font-size="" gwd-fitting-truncate="" gwd-min-font-size-px="10" bind-text="Product.0.name" bind-show="Product.0.name"></div>
@@ -560,7 +591,7 @@
       <div class="js-item-cta gwd-grp-9tnc gwd-div-769n" data-gwd-grp-id="cta_1">
         <div class="gwd-grp-9tnc gwd-div-w3uv" data-gwd-grp-id="cta-txt_1" style="white-space: nowrap;">BOOK NOW</div>
       </div>
-      <div class="gwd-div-iyat gwd-div-yar1 js-cover gwd-grp-9tnc" data-gwd-grp-id="item-cover" data-gwd-tl-locked="" data-gwd-tl-hidden=""></div>
+      <div class="gwd-div-iyat gwd-div-yar1 js-cover gwd-grp-9tnc" data-gwd-grp-id="item-cover" data-gwd-tl-locked=""></div>
     </div>
   </template>
   <gwd-gpa-data-provider id="gpa-data-provider" gwd-schema-id="dynamic_retail" network-schema-id="311"></gwd-gpa-data-provider>
@@ -577,15 +608,15 @@
     <gwd-pagedeck class="gwd-page-container" id="pagedeck">
       <gwd-page id="page1" class="transition-opacity gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-2zgm" data-gwd-width="300px" data-gwd-height="600px">
         <div class="gwd-page-content gwd-page-size gwd-div-c0ua">
-          <gwd-image id="guide" source="assets/guide.jpg" scaling="stretch" class="gwd-image-vqdf" data-gwd-guide="" data-gwd-tl-locked=""></gwd-image>
-          <div class="gwd-div-m9ns" id="background" data-gwd-tl-locked="" data-gwd-tl-hidden="">
+          <gwd-image id="guide" source="assets/guide.jpg" scaling="stretch" class="gwd-image-vqdf" data-gwd-guide="" data-gwd-tl-locked="" data-gwd-tl-hidden=""></gwd-image>
+          <div class="gwd-div-m9ns" id="background" data-gwd-tl-locked="">
             <gwd-image id="bg" source="assets/bg.jpg" scaling="stretch" class="gwd-image-kk4i"></gwd-image>
           </div>
           <div class="gwd-div-gm87" id="gallery" style="overflow: hidden;">
             <gwd-swipegallery id="swipegallery-items" scaling="cover" class="gwd-swipegallery-rrts gwd-swipegallery-mtvp" groups="item" num-frames-to-display="1" frame-snap-interval="1" offset="4" autoplay-duration="12000" autoplay="" navigation-highlight="rgba(68,68,68,1)" swipe-axis="x" clamp-frame-size-to-image="false" style="overflow: visible;">
-              <div data-gwd-group="item" class="js-item" bind-each-item="Product"></div>
+              <div data-gwd-group="item" class="js-item gwd-div-198e gwd-div-iapu gwd-div-wfw2 gwd-div-5idu gwd-div-ymoj gwd-div-j5s2 gwd-div-ephx gwd-div-60bf gwd-div-gy50 gwd-div-3ase gwd-div-sglf gwd-div-sngd gwd-div-airw gwd-div-1yek gwd-div-1bxj gwd-div-1oie gwd-div-wx2g gwd-div-e49w gwd-div-2eas gwd-div-5vt8" bind-each-item="Product"></div>
             </gwd-swipegallery>
-            <div class="gwd-div-1xas gwd-div-j0gu" id="hotspot2"></div>
+            <div class="gwd-div-1xas gwd-div-j0gu" id="hotspot2" data-gwd-tl-hidden="" data-gwd-tl-locked=""></div>
             <div class="gwd-div-1xas gwd-div-j0gu gwd-div-14gy" id="hotspot1"></div>
             <div class="gwd-div-1ygc" id="arrow-next">
               <gwd-image class="gwd-img-fmjf gwd-img-kds3 gwd-img-xubf gwd-img-velf gwd-image-d90s" source="assets/arrow-right.png" id="arrow-next-img" style="opacity: 1;"></gwd-image>
@@ -596,7 +627,6 @@
           </div>
           <div class="gwd-div-s5bt" id="header" data-gwd-tl-locked="">
             <gwd-image class="gwd-img-2usu gwd-img-udwm gwd-img-awho" source="assets/logo.png" id="logo-img" scaling="contain"></gwd-image>
-            <div class="gwd-div-j0ku gwd-div-sli3 gwd-div-17rw" style="font-weight: bold; font-size: 14px; text-align: center;" id="header-txt" data-gwd-tl-hidden="">Sample Retail Headline Text</div>
             <gwd-image id="headline" source="assets/headline.png" scaling="stretch" class="gwd-image-owce"></gwd-image>
           </div>
           <div class="mouse-disable gwd-div-jk8o" id="border" data-gwd-tl-locked=""></div>
