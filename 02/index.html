@@ -3,11 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Media Monks carousel</title>
   </head>
   <body>
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <div class="carousel">
+        <div class="carousel-controls">
+          <div class="wrapper-img">
+            <img src="./images/arrow-left.png" alt="Arrow left" />
+          </div>
+          <!-- <div class="logo">
+            <img src="./images/logo.png" alt="logo" class="logo-img" />
+          </div> -->
+
+          <img src="./images/logo.png" alt="logo" class="logo" />
+
+          <div class="wrapper-img">
+            <img src="./images/arrow-right.png" alt="Arrow right" />
+          </div>
+        </div>
+        <!-- Carousel Items -->
+        <ul class="carousel-group">
+          <li class="carousel-item">
+            <img src="./images/new-monk.jpg" alt="" />
+          </li>
+          <li class="carousel-item">
+            <img src="./images/facial-expressions.jpg" alt="" />
+          </li>
+          <li class="carousel-item">
+            <img src="./images/crouching-monk.jpg" alt="" />
+          </li>
+          <li class="carousel-item">
+            <img src="./images/toy-sculpt.jpg" alt="" />
+          </li>
+          <li class="carousel-item"><img src="./images/toy.jpg" alt="" /></li>
+        </ul>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

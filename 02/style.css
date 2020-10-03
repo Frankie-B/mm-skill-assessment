@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-controls {
+  background: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 300px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.carousel-item img {
+  height: 200px;
+  width: 300px;
+}
+
+.carousel-group {
+  position: relative;
+}
