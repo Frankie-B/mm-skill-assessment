@@ -86,8 +86,8 @@
       position: absolute;
       left: -153px;
       top: 24.5px;
-      height: 369px;
       width: 300px;
+      height: 369px;
     }
     .gwd-img-bqtg {
       position: absolute;
@@ -181,9 +181,9 @@
       top: 23.5px;
     }
     .gwd-swipegallery-mtvp {
-      top: 105px;
       left: 0px;
       transform-origin: 50% 50% 0px;
+      top: 105px;
     }
     .js-item-name {
       height: 42px;
@@ -225,8 +225,8 @@
       position: absolute;
       width: 300px;
       transform-origin: 50% 50% 0px;
-      top: 60px;
       height: 338px;
+      top: 59px;
       left: 1px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-eelt {
@@ -260,13 +260,13 @@
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-769n {
       position: absolute;
       align-self: stretch;
-      top: 316px;
       background-image: none;
       color: white;
       padding-top: 6px;
       height: 51px;
       width: 224px;
       background-color: rgb(223, 47, 0);
+      top: 315px;
       left: 39px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-w3uv {
@@ -282,7 +282,7 @@
     }
     [data-gwd-group="item"] {
       width: 302px;
-      height: 398px;
+      height: 397px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-1d6j {
       position: relative;
@@ -293,7 +293,7 @@
       overflow: hidden;
       width: 250px;
       height: 50px;
-      top: 257px;
+      top: 256px;
       left: 26px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-yksl {
@@ -301,23 +301,25 @@
       width: 302px;
       height: 60px;
       transform-origin: 50% 50% 0px;
-      top: 109px;
+      top: 108px;
       left: 0px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-yar1 {
       box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 2px 0px;
       background-color: rgba(255, 255, 255, 0.5);
-      top: 60px;
       height: 338px;
       transform-origin: 50% 50% 0px;
-      left: 1px;
       width: 300px;
+      top: 59px;
+      left: 0px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-1atn {
-      height: 354px;
-      width: 290px;
       background-color: transparent;
-      left: 6px;
+      transform-origin: 50% 50% 0px;
+      height: 397px;
+      width: 300px;
+      top: 0px;
+      left: 1px;
     }
     .gwd-div-1xas {
       position: absolute;
@@ -430,31 +432,39 @@
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-1sf9 {
       height: 61px;
       background-color: transparent;
+      top: 226px;
       left: 150px;
-      top: 227px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-rw8y {
       height: 61px;
       background-color: transparent;
-      top: 227px;
-      left: 20px;
       opacity: 0.7;
+      top: 226px;
+      left: 20px;
     }
     [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-1t2k {
       font-family: Montserrat;
       font-weight: bold;
-      left: 2.72%;
       opacity: 0.6;
+      left: 2.72%;
     }
     .gwd-div-5vt8 {
+      top: 1px;
       left: -6px;
     }
-    [data-gwd-group="item"] .gwd-grp-9tnc.gwd-image-r95o {
+    [data-gwd-group="item"] .gwd-grp-9tnc.gwd-div-l5m1 {
+      -webkit-mask-size: 113px 44px;
+      -webkit-mask-image: url("assets/crossout.png");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: 10.5px -24px;
+    }
+    [data-gwd-group="item"] .gwd-grp-9tnc.gwd-image-v7e1 {
+      display: block;
+      height: 44px;
       position: absolute;
       width: 113px;
-      height: 44px;
-      left: 13px;
-      top: 7px;
+      top: 235px;
+      left: 32px;
     }
   </style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
@@ -512,6 +522,14 @@
     gwd.auto_Arrow_nextMouseover1 = function(event) {
       // GWD Predefined Function
       gwd.actions.events.setInlineStyle('arrow-next-img', 'opacity: 0.6; ');
+    };
+    gwd.handleProductExit = function(event) {
+      var gallery = document.getElementById('swipegallery-items');
+      var frameIndex = gallery.currentIndex; // one-based gallery frame index.
+      var exitUrls = gallery.getAttribute('exit-urls').split(',');
+      var productIndex = frameIndex - 1; // zero-based product index.
+      var exitId = 'Product_' + productIndex + '_url';
+      Enabler.exitOverride(exitId, exitUrls[productIndex]);
     };
   </script>
   <script type="text/javascript" gwd-events="registration">
@@ -577,24 +595,24 @@
       <gwd-image class="gwd-grp-9tnc gwd-img-kiys" data-gwd-grp-id="item-img" scaling="cover" bind-source="Product.0.imageUrl"></gwd-image>
       <div class="js-item-prices gwd-grp-9tnc gwd-div-f0ms gwd-div-13e6 gwd-div-rw8y" data-gwd-grp-id="item-prices" style="width: 138px;">
         <div class="v-center js-item-price gwd-div-j0ku gwd-grp-9tnc gwd-div-6qmu gwd-gen-1806gwdanimation gwd-div-1t2k" data-gwd-grp-id="item-price-txt" gwd-fitting-truncate="true" style="white-space: nowrap; color: rgb(255, 255, 255); padding-left: 2px; max-width: 245px; padding-right: 10px; font-size: 50px;" data-gwd-fit-font-size="" gwd-min-font-size-px="10" bind-text="Product.0.price" bind-show="Product.0.price"></div>
-        <gwd-image source="assets/crossout.png" scaling="stretch" data-gwd-grp-id="crossout" class="gwd-grp-9tnc gwd-image-r95o" data-gwd-tl-locked=""></gwd-image>
       </div>
+      <gwd-image source="assets/crossout.png" scaling="stretch" class="gwd-image-v7e1 gwd-grp-9tnc" data-gwd-grp-id="crossout-img"></gwd-image>
       <div class="js-item-prices gwd-div-f0ms gwd-div-13e6 gwd-grp-9tnc gwd-div-1sf9" style="width: 138px;" data-gwd-grp-id="item-sale-prices" data-gwd-tl-locked="">
         <div class="v-center js-item-price gwd-div-j0ku gwd-div-6qmu gwd-gen-1806gwdanimation gwd-grp-9tnc gwd-div-194c" gwd-fitting-truncate="true" style="white-space: nowrap; color: rgb(255, 255, 255); padding-left: 2px; max-width: 245px; padding-right: 10px; font-size: 50px;" data-gwd-fit-font-size="" gwd-min-font-size-px="10" data-gwd-grp-id="item-sale-price-txt" bind-text="Product.0.salePrice" bind-show="Product.0.salePrice"></div>
       </div>
-      <div class="js-item-name transition-opacity gwd-grp-9tnc gwd-div-eelt gwd-div-yksl" data-gwd-grp-id="item-name" style="font-size: 16px;">
+      <div class="js-item-name transition-opacity gwd-grp-9tnc gwd-div-eelt gwd-div-yksl" data-gwd-grp-id="item-name" style="font-size: 16px;" data-gwd-tl-locked="">
         <div class="v-center gwd-div-j0ku gwd-div-sli3 gwd-grp-9tnc gwd-div-huei" data-gwd-grp-id="item-name-txt" style="font-weight: bold; font-size: 25px;" data-gwd-fit-font-size="" gwd-fitting-truncate="" gwd-min-font-size-px="10" bind-text="Product.0.name" bind-show="Product.0.name"></div>
       </div>
-      <div class="js-item-name gwd-div-eelt gwd-grp-9tnc gwd-div-1rcs gwd-gen-9uhpgwdanimation" data-gwd-grp-id="item-description">
+      <div class="js-item-name gwd-div-eelt gwd-grp-9tnc gwd-div-1rcs gwd-gen-9uhpgwdanimation gwd-div-l5m1" data-gwd-grp-id="item-description" data-gwd-tl-hidden="" data-gwd-tl-locked="">
         <div class="v-center gwd-div-j0ku gwd-div-sli3 gwd-grp-9tnc gwd-div-1d6j" data-gwd-grp-id="item-des-txt" data-gwd-fit-font-size="" gwd-fitting-truncate="" gwd-min-font-size-px="10" style="font-size: 14px;" bind-text="Product.0.description" bind-show="Product.0.description"></div>
       </div>
       <div class="js-item-cta gwd-grp-9tnc gwd-div-769n" data-gwd-grp-id="cta_1">
         <div class="gwd-grp-9tnc gwd-div-w3uv" data-gwd-grp-id="cta-txt_1" style="white-space: nowrap;">BOOK NOW</div>
       </div>
-      <div class="gwd-div-iyat gwd-div-yar1 js-cover gwd-grp-9tnc" data-gwd-grp-id="item-cover" data-gwd-tl-locked=""></div>
+      <div class="gwd-div-iyat gwd-div-yar1 js-cover gwd-grp-9tnc" data-gwd-grp-id="item-cover"></div>
     </div>
   </template>
-  <gwd-gpa-data-provider id="gpa-data-provider" gwd-schema-id="dynamic_retail" network-schema-id="311"></gwd-gpa-data-provider>
+  <gwd-gpa-data-provider id="gpa-data-provider" gwd-schema-id="dynamic_custom" network-schema-id="416"></gwd-gpa-data-provider>
   <gwd-data-binder id="gwd-data-binder_1"></gwd-data-binder>
   <gwd-text-helper id="gwd-text-helper_1" fit-font-size-for-selector="[data-gwd-fit-font-size],[gwd-fitting-truncate]" data-gwd-fit-font-size="false"></gwd-text-helper>
   <gwd-google-ad id="gwd-ad" polite-load="" data-provider="gpa-data-provider">
@@ -612,7 +630,7 @@
           <div class="gwd-div-m9ns" id="background" data-gwd-tl-locked="">
             <gwd-image id="bg" source="assets/bg.jpg" scaling="stretch" class="gwd-image-kk4i"></gwd-image>
           </div>
-          <div class="gwd-div-gm87" id="gallery" style="overflow: hidden;">
+          <div class="gwd-div-gm87" id="gallery" style="overflow: hidden;" data-gwd-tl-locked="">
             <gwd-swipegallery id="swipegallery-items" scaling="cover" class="gwd-swipegallery-rrts gwd-swipegallery-mtvp" groups="item" num-frames-to-display="1" frame-snap-interval="1" offset="4" autoplay-duration="12000" autoplay="" navigation-highlight="rgba(68,68,68,1)" swipe-axis="x" clamp-frame-size-to-image="false" style="overflow: visible;">
               <div data-gwd-group="item" class="js-item gwd-div-198e gwd-div-iapu gwd-div-wfw2 gwd-div-5idu gwd-div-ymoj gwd-div-j5s2 gwd-div-ephx gwd-div-60bf gwd-div-gy50 gwd-div-3ase gwd-div-sglf gwd-div-sngd gwd-div-airw gwd-div-1yek gwd-div-1bxj gwd-div-1oie gwd-div-wx2g gwd-div-e49w gwd-div-2eas gwd-div-5vt8" bind-each-item="Product"></div>
             </gwd-swipegallery>
