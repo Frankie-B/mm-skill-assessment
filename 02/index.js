@@ -31,7 +31,7 @@ prev.addEventListener('click', () => {
   carousel.style.transform = 'translateX( ' + (-imgSize * counter) + 'px)';
 });
 
-// Event listener to trigger when a transition completes
+// Event listener to trigger when a transition completes.
 carousel.addEventListener('transitionend', () => { 
   // Infinite scroll effect when clicking the prev button.
   if (carouselItems[counter].id === 'carousel-item-last') {
@@ -40,7 +40,7 @@ carousel.addEventListener('transitionend', () => {
     carousel.style.transform = 'translateX( ' + (-imgSize * counter) + 'px)';
   }
 
-  // Logic for infinite scroll when clicking the next button.
+  // Infinite scroll when clicking the next button.
   if (carouselItems[counter].id === 'carousel-item-first') {
     carousel.style.transition = 'none'; 
     counter = carouselItems.length - counter; 
